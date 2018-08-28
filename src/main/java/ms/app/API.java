@@ -34,7 +34,7 @@ public class API {
 		logger.debug("Incoming call request no : ", counter);
 		String response = "Pong";
 		try {
-			response = "[" + System.currentTimeMillis() + "] "+ InetAddress.getLocalHost().getHostName() + "Request ID : " + java.util.UUID.randomUUID().toString();
+			response = "[" + System.currentTimeMillis() + "] node = "+ InetAddress.getLocalHost().getHostName() + " RequestIDJJJJJ = " + java.util.UUID.randomUUID().toString();
 			logger.info(response);
 		} catch (UnknownHostException e) {
 			logger.error(e.getMessage(),e);
